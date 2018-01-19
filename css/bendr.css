@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1.page-title {
+    text-align: left;
+    width: 600px;
+    margin: 30px auto 20px auto
+}
+
+.current-beer {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+    margin-right: 50px;
+    flex-grow: 0;
+    width: 300px;
+}
+
+.current-beer-img-wrapper {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+.current-beer-img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.current-beer-title {
+    text-align: center;
+}
+
+.current-beer-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.beer-action {
+    padding: 25px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    background-color: white;
+    cursor: pointer;
+}
+
+.beer-action i {
+    font-size: 24px;
+}
+
+#thumbsUp i {
+    color: green;
+}
+
+#thumbsUp:hover {
+    background-color: green;
+}
+
+#thumbsDown:hover {
+    background-color: red;
+}
+
+#thumbsDown i {
+    color: red;
+}
+
+#thumbsUp:hover i,
+#thumbsDown:hover i {
+    color: white;
+}
+
+.liked-beers {
+
+}
+
+.liked-beers h2 {
+    margin-top: 25px;
+}
+
+.liked-beers-list {
+    font-family: 'Lato', sans-serif;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.liked-beers-list li {
+    display: list-item;;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.liked-beers-list li:last-child {
+    border-bottom: 0;
+}
